@@ -13,7 +13,7 @@ body {
 .hero {
     height: 100vh;
     width: 100%;
-    background-image: url('green\ wavy.jpeg'); 
+    background-image: url('green wavy.jpeg'); 
     background-size: 100% auto;
     background-position: center;
     display: flex;
@@ -294,15 +294,15 @@ body {
 /* 1. Kontainer Utama: Lebih ramping */
 .right-content {
     width: 85%;
-    max-width: 600px;    /* Dipersempit agar kartu tidak melebar */
+    max-width: 600px;    
     margin-left: auto;
-    padding-top: 110px;  /* Jarak pas di bawah Nav */
+    padding-top: 110px;  
     padding-bottom: 30px;
 }
 
 /* 2. Judul Section: Kecil & Elegan */
 .right-content h2, .right-title {
-    font-size: 1.2rem;   /* Ukuran judul diperkecil lagi */
+    font-size: 1.2rem;  
     color: #F3E5AB;
     text-align: right;
     margin-bottom: 15px;
@@ -313,7 +313,7 @@ body {
 .portfolio-wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
-    gap: 12px;           /* Jarak antar kartu makin mepet */
+    gap: 12px;           
 }
 
 /* 4. Kartu Project: Lebih Mungil */
@@ -327,7 +327,7 @@ body {
 /* 5. Gambar Project: Dibuat pendek banget */
 .project-thumb {
     width: 100%;
-    height: 110px;       /* Pendekin lagi biar hemat ruang */
+    height: 110px;      
     background: #1B4D3E;
 }
 
@@ -339,20 +339,20 @@ body {
 
 /* 6. Body Kartu: Teks Mini */
 .project-body {
-    padding: 10px;       /* Padding minimalis */
+    padding: 10px;       
 }
 
 .project-title {
-    font-size: 0.9rem;   /* Judul project kecil */
+    font-size: 0.9rem;   
     margin-bottom: 4px;
     color: #F3E5AB;
 }
 
 .project-desc {
-    font-size: 0.7rem;   /* Deskripsi mini */
+    font-size: 0.7rem;   
     line-height: 1.2;
     margin-bottom: 10px;
-    height: 30px;        /* Batas tinggi agar seragam */
+    height: 30px;        
     overflow: hidden;
 }
 
@@ -362,9 +362,9 @@ body {
 }
 
 .project-links a {
-    padding: 4px 10px;   /* Tombol ramping */
+    padding: 4px 10px;   
     font-size: 0.6rem;
-    border-radius: 4px;  /* Kotak dikit biar clean */
+    border-radius: 4px;  
 }
 
 /* 8. Grid Skills (Index 3) Super Kecil */
@@ -381,13 +381,13 @@ body {
 }
 
 .skill-icon {
-    width: 30px;         /* Ikon mini */
+    width: 30px;         
     height: 30px;
     margin-bottom: 5px;
 }
 
 .skill-name {
-    font-size: 0.6rem;   /* Nama skill super kecil */
+    font-size: 0.6rem;   
 }
 
 /* --- EDIT CSS UNTUK GAMBAR PROJECT (INDEX 4) --- */
@@ -395,8 +395,8 @@ body {
 .project-thumb img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Jaga agar gambar gak gepeng */
-    object-position: center 40%; /* Kamu bisa atur angkanya, misal 40% atau 50% */
+    object-fit: cover; 
+    object-position: center 40%; 
     
     display: block;
 }
@@ -407,9 +407,9 @@ body {
 .hero-page .panel-right .right-content,
 .panel-right .right-content {
     width: 90%;
-    max-width: 500px;    /* Form dibuat lebih ramping agar elegan */
+    max-width: 500px;    
     margin-left: auto;
-    padding-top: 120px;  /* Jarak agar tidak nabrak tombol CONTACT ME */
+    padding-top: 120px;  
     padding-bottom: 40px;
 }
 
@@ -428,7 +428,7 @@ body {
 .contact-form {
     display: grid;
     gap: 20px;
-    background: rgba(243, 229, 171, 0.05); /* Background sangat tipis */
+    background: rgba(243, 229, 171, 0.05); 
     padding: 30px;
     border-radius: 15px;
     backdrop-filter: blur(10px);
@@ -440,7 +440,7 @@ body {
 .contact-form textarea {
     background: transparent;
     border: none;
-    border-bottom: 2px solid rgba(243, 229, 171, 0.3); /* Garis bawah cream transparan */
+    border-bottom: 2px solid rgba(243, 229, 171, 0.3); 
     padding: 12px 5px;
     color: #F3E5AB;
     font-family: 'Montserrat', sans-serif;
@@ -450,7 +450,7 @@ body {
 }
 
 .contact-form textarea {
-    border: 2px solid rgba(243, 229, 171, 0.3); /* Textarea pakai border kotak */
+    border: 2px solid rgba(243, 229, 171, 0.3); 
     border-radius: 8px;
     margin-top: 10px;
 }
@@ -458,7 +458,7 @@ body {
 /* Efek saat input diklik (Focus) */
 .contact-form input:focus, 
 .contact-form textarea:focus {
-    border-color: #F3E5AB; /* Garis jadi terang saat diketik */
+    border-color: #F3E5AB; 
     background: rgba(243, 229, 171, 0.05);
 }
 
@@ -471,8 +471,8 @@ body {
 /* 5. Tombol Submit */
 .contact-form button {
     margin-top: 15px;
-    background: #F3E5AB; /* Warna cream solid */
-    color: #1B4D3E;      /* Warna hijau gelap (teks) */
+    background: #F3E5AB; 
+    color: #1B4D3E;      
     border: none;
     padding: 15px;
     border-radius: 50px;
