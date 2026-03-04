@@ -1,0 +1,501 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url('green\ wavy.jpeg'); 
+    background-size: 100% auto;
+    background-position: center;
+    display: flex;
+    position: relative;
+}
+
+.panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.panel-left {
+    padding-left: 8%;
+}
+
+.panel-right {
+    align-items: center;
+}
+
+/* LOGO (Rumah) */
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    background: #F3E5AB;;
+    padding: 12px;
+    border-radius: 12px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #013220;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* TEKS KONTEN */
+.intro {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #F3E5AB;
+    opacity: 0.9;
+}
+
+.title {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 1;
+    margin: 10px 0;
+    opacity: 0.9;
+    color: #F3E5AB;
+}
+
+.subtitle {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1.2rem;
+    color: #F3E5AB;
+    opacity: 0.9;
+    margin-bottom: 40px;
+}
+
+/* SOSIAL MEDIA (Kotak) */
+.social {
+    display: flex;
+    gap: 15px;
+}
+
+.social-btn {
+    background: #F3E5AB;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+/* NAVIGASI (Kanan Atas) */
+
+.nav .cta {
+    background: #F3E5AB;
+    color: #013220 !important;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+}
+
+.nav {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    z-index: 100; 
+}
+
+.nav a {
+    color: #013220;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav a.active {
+    border-bottom: 2px solid #F3E5AB;
+    padding-bottom: 5px;
+}
+
+/* FOTO KADAL */
+.photo-area {
+    width: 500px;
+    margin-top: 350px;
+}
+
+.photo {
+    width: 100%;
+    display: block;
+}
+
+.divider {
+    display: none;
+}
+
+/* KHUSUS HALAMAN ABOUT ME */
+.hero-about .panel-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10%;
+    color: #F3E5AB;
+}
+
+/* Container pembungkusnya harus relatif */
+.panel-right {
+    position: relative; 
+}
+
+/* POTO KADAL 2*/
+
+.photo-area.kadal-kecil {
+    position: absolute;
+    right: 20px;       
+    bottom: -65px;     
+    width: 150px;      
+    z-index: 10;       
+    transition: 0.3s;
+}
+
+.photo-area.kadal-kecil .photo2 {
+    width: 100%;
+    display: block;
+
+}
+
+.right-content {
+    max-width: 500px;
+    z-index: 5;
+}
+
+.right-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #F3E5AB;
+}
+
+.right-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #FFFDD0(255, 255, 255, 0.9);
+}
+
+.page-title {
+    font-family: 'Playfair Display', serif; 
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: #F3E5AB;
+}
+
+.page-desc {
+    font-size: 1.1rem;
+    color: #F3E5AB;
+    line-height: 1.6;
+    max-width: 400px;
+}
+
+/* Style Kartu Transparan untuk About Me */
+.about-card {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 15px;
+    max-width: 450px; 
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2); 
+    z-index: 5;
+}
+
+/* SKILL */
+.nav a.active {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+
+.panel-right .right-content {
+    width: 100%;
+    max-width: 800px;
+    padding-top: 100px; 
+    padding-right: 5%;
+    display: block;
+}
+
+.right-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;             
+    color: #F3E5AB;
+    text-align: right;            
+    margin-top: 40px;             
+    margin-bottom: 15px;          
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.skills-wrap {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 5;
+}
+
+.skill-card {
+    background: rgba(243, 229, 171, 0.1); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(243, 229, 171, 0.2);
+    padding: 15px 5px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.skill-icon {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto 8px; 
+}
+
+.skill-name {
+    color: #F3E5AB !important;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* --- SKILLS & PORTFOLIO (SUPER COMPACT) --- */
+
+/* 1. Kontainer Utama: Lebih ramping */
+.right-content {
+    width: 85%;
+    max-width: 600px;    /* Dipersempit agar kartu tidak melebar */
+    margin-left: auto;
+    padding-top: 110px;  /* Jarak pas di bawah Nav */
+    padding-bottom: 30px;
+}
+
+/* 2. Judul Section: Kecil & Elegan */
+.right-content h2, .right-title {
+    font-size: 1.2rem;   /* Ukuran judul diperkecil lagi */
+    color: #F3E5AB;
+    text-align: right;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+/* 3. Grid Portfolio: Tetap 2 kolom tapi rapat */
+.portfolio-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 12px;           /* Jarak antar kartu makin mepet */
+}
+
+/* 4. Kartu Project: Lebih Mungil */
+.project {
+    background: rgba(243, 229, 171, 0.07); 
+    backdrop-filter: blur(6px);
+    border-radius: 8px;
+    border: 1px solid rgba(243, 229, 171, 0.1);
+}
+
+/* 5. Gambar Project: Dibuat pendek banget */
+.project-thumb {
+    width: 100%;
+    height: 110px;       /* Pendekin lagi biar hemat ruang */
+    background: #1B4D3E;
+}
+
+.project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 6. Body Kartu: Teks Mini */
+.project-body {
+    padding: 10px;       /* Padding minimalis */
+}
+
+.project-title {
+    font-size: 0.9rem;   /* Judul project kecil */
+    margin-bottom: 4px;
+    color: #F3E5AB;
+}
+
+.project-desc {
+    font-size: 0.7rem;   /* Deskripsi mini */
+    line-height: 1.2;
+    margin-bottom: 10px;
+    height: 30px;        /* Batas tinggi agar seragam */
+    overflow: hidden;
+}
+
+/* 7. Tombol Link: Mungil */
+.project-links {
+    gap: 8px;
+}
+
+.project-links a {
+    padding: 4px 10px;   /* Tombol ramping */
+    font-size: 0.6rem;
+    border-radius: 4px;  /* Kotak dikit biar clean */
+}
+
+/* 8. Grid Skills (Index 3) Super Kecil */
+.skills-wrap {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.skill-card {
+    padding: 8px 4px;
+    border-radius: 6px;
+}
+
+.skill-icon {
+    width: 30px;         /* Ikon mini */
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.skill-name {
+    font-size: 0.6rem;   /* Nama skill super kecil */
+}
+
+/* --- EDIT CSS UNTUK GAMBAR PROJECT (INDEX 4) --- */
+
+.project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Jaga agar gambar gak gepeng */
+    object-position: center 40%; /* Kamu bisa atur angkanya, misal 40% atau 50% */
+    
+    display: block;
+}
+
+/* --- CONTACT PAGE STYLES --- */
+
+/* 1. Kontainer Utama: Tetap Ramping & Turun dari Nav */
+.hero-page .panel-right .right-content,
+.panel-right .right-content {
+    width: 90%;
+    max-width: 500px;    /* Form dibuat lebih ramping agar elegan */
+    margin-left: auto;
+    padding-top: 120px;  /* Jarak agar tidak nabrak tombol CONTACT ME */
+    padding-bottom: 40px;
+}
+
+/* 2. Judul Form */
+.right-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: #F3E5AB;
+    text-align: right;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* 3. Styling Form */
+.contact-form {
+    display: grid;
+    gap: 20px;
+    background: rgba(243, 229, 171, 0.05); /* Background sangat tipis */
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(243, 229, 171, 0.1);
+}
+
+/* 4. Input & Textarea */
+.contact-form input, 
+.contact-form textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(243, 229, 171, 0.3); /* Garis bawah cream transparan */
+    padding: 12px 5px;
+    color: #F3E5AB;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact-form textarea {
+    border: 2px solid rgba(243, 229, 171, 0.3); /* Textarea pakai border kotak */
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Efek saat input diklik (Focus) */
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #F3E5AB; /* Garis jadi terang saat diketik */
+    background: rgba(243, 229, 171, 0.05);
+}
+
+/* Placeholder (Tulisan bayangan di dalam input) */
+.contact-form input::placeholder, 
+.contact-form textarea::placeholder {
+    color: rgba(243, 229, 171, 0.5);
+}
+
+/* 5. Tombol Submit */
+.contact-form button {
+    margin-top: 15px;
+    background: #F3E5AB; /* Warna cream solid */
+    color: #1B4D3E;      /* Warna hijau gelap (teks) */
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.contact-form button:hover {
+    background: #ffffff;
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    .right-content {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .right-title {
+        text-align: center;
+    }
+}
